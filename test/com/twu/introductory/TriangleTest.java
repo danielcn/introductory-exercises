@@ -17,4 +17,12 @@ public class TriangleTest {
         int sizeLine = 8;
         assertEquals("********", triangle.drawHorizontalLine(sizeLine));
     }
+
+    @Test
+    public void testDrawVerticalLine(){
+        Triangle triangle = new Triangle();
+        int sizeLine = 3;
+        String expectedVerticalLine = "*\n*\n*\n";
+        assertEquals(expectedVerticalLine, triangle.drawVerticalLine(sizeLine));
+    }
 }
