@@ -13,4 +13,12 @@ public class Triangle {
         }
         return line;
     }
+
+    public String drawVerticalLine(int sizeLine) {
+        String verticalLine = new String();
+        for (int i = 0; i < sizeLine; i++) {
+            verticalLine += "*\n";
+        }
+        return verticalLine;
+    }
 }
