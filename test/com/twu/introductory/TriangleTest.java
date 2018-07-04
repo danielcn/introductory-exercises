@@ -25,4 +25,12 @@ public class TriangleTest {
         String expectedVerticalLine = "*\n*\n*\n";
         assertEquals(expectedVerticalLine, triangle.drawVerticalLine(sizeLine));
     }
+
+    @Test
+    public void testDrawTriangle(){
+        Triangle triangle = new Triangle();
+        int sizeTriangle = 3;
+        String expectedTriangle = "*\n**\n***\n";
+        assertEquals(expectedTriangle, triangle.drawTriangle(sizeTriangle));
+    }
 }
